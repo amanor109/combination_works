@@ -4,10 +4,15 @@ function rollDice(){
     const num_of_dice = document.getElementById("num_of_dice").value
     const dice_result = document.getElementById("dice_result")
     const dice_images = document.getElementById("dice_images")
+    const user_score = document.getElementById("user_score")
+    const total_score = document.getElementById("total_score")
+    const percentage = document.getElementById("percentage")
 
     const values = []
     const images = []
-    
+    let total = 0;
+    let user_sum = 0;
+    let percentage_calc = 0
 
     for(let i = 0; i <num_of_dice; i++){
         const value = Math.floor(Math.random() * 6) + 1;
@@ -15,11 +20,21 @@ function rollDice(){
         values.push(value); 
         images.push(`<img src ="${value}.png"  alt = "Dice ${value}">`);
 
+        total = num_of_dice * 6;
+
     }
+
+    for(for num of values){
+        user_sum += num 
+    }
+    percentage_calc = Math.floor(user_sum / total * 100)
 
     dice_result.textContent = `dice: ${values.join(',  ')}`
 
     dice_images.innerHTML = images.join('')
+    user_score.textContent = `Your total score is: ${user_sum}`
+    total_score.textContent = `Out of:${total}`
+    percentage.textContent = `Percentage score: ${percentage_calc}`
 
     
 }
