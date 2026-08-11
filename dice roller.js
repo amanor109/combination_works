@@ -34,7 +34,7 @@ function rollDice(){
     dice_images.innerHTML = images.join('')
     user_score.textContent = `Your total score is: ${user_sum}`
     total_score.textContent = `Out of:${total}`
-    percentage.textContent = `Percentage score: ${percentage_calc}`
+    percentage.textContent = `Percentage score: ${percentage_calc}%`
 
     
 }
