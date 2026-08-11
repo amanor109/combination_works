@@ -24,7 +24,7 @@ function rollDice(){
 
     }
 
-    for(for num of values){
+    for(const num of values){
         user_sum += num 
     }
     percentage_calc = Math.floor(user_sum / total * 100)
