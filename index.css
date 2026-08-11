@@ -1,0 +1,86 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGF0dGVybmVkJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    
+
+}
+
+.intro{
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#home-page-welcome{
+    font-size: 50px;
+    color: blue;
+    text-shadow: 1px 1px 9px black;
+    margin: 0px 0px;
+
+
+}
+#home-page-description{
+    margin: 10px 0px 20px 0px ;
+    
+}
+#home-page-description, #home-page-feedback{
+    font-size: 20px;
+    text-align: center;
+    
+    color: blue;
+    text-shadow: 1px 1px 9px black;
+
+}
+#home-page-input{
+    width: 500px;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    text-align: center;
+}
+#home-page-submit{
+    margin: 20px 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#home-page-submit:hover{
+    background-color: darkblue;
+}
+#home-page-submit:active{
+    background-color: white;
+    color: blue;
+    translate:2px 2px;
+}
+li{
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 500px;
+    color: blue;
+    text-shadow: 2px 2px 2px black;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#home-page-footer{
+    color: white;
+    text-shadow: 1px 1px 9px black;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,44 @@
+body{
+    color: white
+}
+
+#playarea{
+    background-color:blue;
+    padding: 20px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+#input_submit_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#user_input{
+    width: 300px;
+    height:25px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 0px auto 20px auto;
+    text-align: center;
+}
+#submit_btn,#home-btn{
+    color: blue;
+    border:none;
+    border-radius:10px;
+    padding: 8px;
+    box-shadow: 2px 2px 8px black;
+    transition:all 0.2s ease;
+    cursor:pointer;
+}
+#submit_btn:active, #home-btn:active{
+    translate:2px 2px 2px;
+
+}
+
+

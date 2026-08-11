@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dicetrial.css">
+</head>
+<body>
+    <div id="working_area">
+        <h1>
+            Dice Roller
+        </h1>
+
+
+        <label for="dice_number">Number of dice</label>
+        <input type="number" id="dice_number" value = 1 min = 1 max = 6>
+
+        <button onclick = "rollDice()">
+            Roll Dice
+        </button>
+
+        <div id="dice_result">
+
+        </div>
+
+        <div id="dice_image_container">
+            <div id="dice_image">
+
+            </div>
+        </div>
+
+        <div id="calculation_part">
+            <div id="first">
+                <p id="user_score">
+                    Your score is: --
+                </p>
+            </div>
+            <div id="second">
+                <p id = "total_score">
+                    Out of a total of: --
+                </p>
+            </div>
+            
+        </div>
+
+        <div id="third">
+            <p id="percentage">
+                This is the third
+            </p>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="dicetrial.js"></script>
+</body>
+</html>
