@@ -1,0 +1,11 @@
+#home_btn{
+    cursor:pointer;
+    padding: 1% 1.5%;
+    color: red;
+    background-color: blue;
+    border: 0.1rem solid red;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius:20%;
+    
+}

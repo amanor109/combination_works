@@ -1,151 +1,18 @@
-class Animals {
-    static number_counter = 0
-    alive(){
-        console.log(`The ${this.name} is alive`)
-        Animals.number_counter++
-    }
+const fruits = [{name: 'apple', color:'red',calories: 95},
+                {name: 'orange', color: 'orange', calories: 45},
+                {name: 'banana', color: 'yellow', calories: 105},
+                {name: 'coconut', color: 'yellow', calories: 159},
+                {name: 'pineapple', color: 'red', calories: 95}
+]
 
-    eat(){
-        console.log(`The ${this.name} is eating`)
-    }
-
-    sleep(){
-        console.log(`The ${this.name} is sleeping`)
-    }
-    
+console.log(fruits.length)
+console.log("Hello world")
+let counter = 0;
+/*while (counter < 3){
+    console.log("Hello world")
+    counter++
 }
-
-class Rabbit extends Animals{
-    name = 'Rabbit'
-    
-    movement(){
-        console.log(`This ${this.name} is running`)
-    }
-}
-
-class Hawk extends Animals{
-    name = 'Hawk'
-    movement (){
-        console.log(`This ${this.name} is flying`)
-    }
-}
-
-class Snake extends Animals{
-    name = 'Snake'
-    movement (){
-        console.log(`This ${this.name} is crawling`)
-    }
-    bite (){
-        console.log(`This .${this.name} can bite`)
-    }
-}
-
-class Lion extends Animals{
-    name = 'Lion'
-    movement (){
-        console.log(`This ${this.name} runs`)
-    }
-}
-const hawk = new Hawk()
-const rabbit = new Rabbit()
-const snake = new Snake()
-const lion = new Lion()
-
-rabbit.alive()
-rabbit.eat()
-rabbit.sleep()
-rabbit.movement()
-
-hawk.alive()
-hawk.eat()
-hawk.sleep()
-hawk.movement()
-
-lion.alive()
-lion.eat()
-lion.sleep()
-lion.movement()
-
-snake.alive()
-snake.eat()
-snake.sleep()
-snake.movement()
-snake.bite()
-
-console.log(`The total animals created are ${Animals.number_counter}`)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 
 
 
