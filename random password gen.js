@@ -1,4 +1,5 @@
 const gen_button = document.getElementById("generate");
+const home_btn = document.getElementById('home_btn');
 
 gen_button.onclick =function (lenght,includelowercase, includeuppercase,includenumbers, includesymbols){
     
@@ -115,3 +116,27 @@ gen_button.onclick =function (lenght,includelowercase, includeuppercase,includen
 
 
 //gen_button.onclick = randompasswordgen(passwordlength, includelowercase, includeuppercase, includenumbers, includesymbols)
+home_btn.onclick = function (){
+    let leave_stay = window.prompt("Are you sure you want to go back to the home page? (y/n)");
+    if (leave_stay === "y") {
+        let rate = window.prompt("Rate this experience from 1 to 10");
+        rate = +rate;
+        if(typeof(rate) === "number" && rate >= 1 && rate <= 10) {
+            window.alert("Thank you for your feedback! You will now be redirected to the home page.");
+            window.location.href = "index.html";
+        }
+        else{
+            window.alert("Invalid rating! Please enter a number between 1 and 10.");
+            
+        }
+    }
+    else if (leave_stay === "n") {
+        window.alert("You will stay on the counter page.");
+        
+    }
+    else {
+        window.alert("Blind ass mother fucker!");
+    }
+
+
+}
