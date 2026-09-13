@@ -91,9 +91,11 @@ input{
     justify-content: center;
     flex-wrap: wrap;
     aligh-items: center;
+    color: blue;
     
 }
 p{
     margin: 20px 20px 0;
+    color: blue;
     
 }
