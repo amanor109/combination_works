@@ -19,38 +19,40 @@ gen_button.onclick =function (lenght,includelowercase, includeuppercase,includen
     const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const numbers = "0123456789";
     const symbols = "!@#$%^&*";
-
     let charset = "";
-    if (lowercasetoggle.checked){
-        charset += lowercase;
-    }
-    
-    if (uppercasetoggle.checked){
-        charset += uppercase;
-    }
-
-    if (numberstoggle.checked){
-        includelowercase = true
-        charset += numbers
-    }
-    
-    if (symbolstoggle.checked){
-        includelowercase = true
-        charset += symbols
-    }
-
-    let password = "";
-    for (let i = 0; i < password_lenght; i++) {
-        const randomIndex = Math.floor(Math.random() * charset.length);
-        password += charset[randomIndex];
-    }
     if(!lowercasetoggle.checked && !uppercasetoggle.checked && !numberstoggle.checked && !symbolstoggle.checked){
         window.alert("You can't generate a password without using these characters")
-        
+        charset = 'Error'
     }
-
-    password_result.textContent =  `Your random password is ${password}`
+    else{
     
+        if (lowercasetoggle.checked){
+            charset += lowercase;
+        }
+    
+        if (uppercasetoggle.checked){
+            charset += uppercase;
+        }
+
+        if (numberstoggle.checked){
+        
+            charset += numbers
+        }
+    
+        if (symbolstoggle.checked){
+        
+            charset += symbols
+        }
+
+        let password = "";
+        for (let i = 0; i < password_lenght; i++) {
+            const randomIndex = Math.floor(Math.random() * charset.length);
+            password += charset[randomIndex];
+        }
+    
+
+        password_result.textContent =  `Your random password is ${password}`
+    }
 
     
 }
