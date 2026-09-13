@@ -1,9 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgb(240, 240, 240);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px 16px;
+    overflow-x: hidden;
 }
 
 .working_area{  
@@ -14,6 +22,8 @@ body{
     background-color: white;
     box-shadow: 5px 4px 12px gray;
     margin: 50px auto
+    ;
+    width: min(100%, 420px);
 
 }
 
@@ -57,7 +67,7 @@ label{
     padding: 20px;
 }
 #user_input{
-    width: 250px;
+    width: min(100%, 250px);
     height: 25px;
     text-align: center;
     border: 1px solid gray ;

@@ -1,8 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px 16px;
+    overflow-x: hidden;
     background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGF0dGVybmVkJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
     background-size: cover;
     
@@ -17,10 +25,11 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: min(100%, 900px);
 
 }
 #home-page-welcome{
-    font-size: 50px;
+    font-size: clamp(2rem, 7vw, 50px);
     color: blue;
     text-shadow: 1px 1px 9px black;
     margin: 0px 0px;
@@ -40,7 +49,7 @@ body{
 
 }
 #home-page-input{
-    width: 500px;
+    width: min(100%, 500px);
     padding: 10px;
     border: 2px solid blue;
     border-radius: 15px;
@@ -68,7 +77,7 @@ li{
     border: 2px solid blue;
     padding: 10px;
     margin: 10px 0px;
-    width: 500px;
+    width: min(100%, 500px);
     color: blue;
     text-shadow: 2px 2px 2px black;
 }
@@ -83,4 +92,32 @@ a{
     text-shadow: 1px 1px 9px black;
     font-size: 14px;
     font-family: Arial, sans-serif;
+}
+
+@media (max-width: 600px){
+    .intro{
+        padding: 16px;
+        border-radius: 18px;
+    }
+
+    #home-page-description, #home-page-feedback{
+        font-size: 1rem;
+    }
+
+    #home-page-project-list{
+        padding-left: 28px;
+    }
+
+    li{
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    a{
+        font-size: 1rem;
+    }
+
+    #home-page-footer{
+        text-align: center;
+    }
 }
