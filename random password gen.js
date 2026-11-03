@@ -52,7 +52,7 @@ gen_button.onclick =function (lenght,includelowercase, includeuppercase,includen
         }
     
 
-        password_result.textContent =  `Your random password is ${password}`
+        password_result.textContent = password
     }
 
     
